@@ -1,0 +1,156 @@
+* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 list-style: none;
+}
+ body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 100vh;
+	 background: #dad;
+}
+ .wrapper {
+	 display: flex;
+	 gap: 4rem;
+}
+ .container {
+	 position: relative;
+	 width: 60px;
+	 height: 60px;
+	 transform: rotate(-30deg) skew(10deg);
+}
+ .container span {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 transition: all 0.4s ease-in-out;
+	 background: crimson;
+	 color: white;
+	 border-radius: 2px;
+	 font-size: 1.5rem;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ li:hover span:nth-child(1) {
+	 transform: translate(5px, -5px);
+	 opacity: 0.2;
+}
+ li:hover span:nth-child(2) {
+	 transform: translate(10px, -10px);
+	 opacity: 0.4;
+}
+ li:hover span:nth-child(3) {
+	 transform: translate(15px, -15px);
+	 opacity: 0.6;
+}
+ li:hover span:nth-child(4) {
+	 transform: translate(20px, -20px);
+	 opacity: 0.8;
+}
+ li:hover span:nth-child(5) {
+	 transform: translate(25px, -25px);
+}
+ .container.github {
+	 transform: rotate(0deg) skew(0deg);
+}
+ .container.github span {
+	 background: #9b1750;
+	 border-radius: 50%;
+}
+ .container.github:hover span:nth-child(1) {
+	 transform: translate(0, -5px);
+	 opacity: 0.2;
+}
+ .container.github:hover span:nth-child(2) {
+	 transform: translate(0, -10px);
+	 opacity: 0.4;
+}
+ .container.github:hover span:nth-child(3) {
+	 transform: translate(0, -15px);
+	 opacity: 0.6;
+}
+ .container.github:hover span:nth-child(4) {
+	 transform: translate(0, -20px);
+	 opacity: 0.8;
+}
+ .container.github:hover span:nth-child(5) {
+	 transform: translate(0, -25px);
+	 opacity: 0.8;
+}
+ .container.codepen {
+	 transform: rotate(0deg) skew(0deg);
+}
+ .container.codepen span {
+	 background: #5d001d;
+}
+ .container.codepen:hover span {
+	 border-radius: 50%;
+}
+ .container.codepen:hover span:nth-child(1) {
+	 transform: translate(5px, 0);
+	 opacity: 0.2;
+}
+ .container.codepen:hover span:nth-child(2) {
+	 transform: translate(10px, 0);
+	 opacity: 0.4;
+}
+ .container.codepen:hover span:nth-child(3) {
+	 transform: translate(15px, 0);
+	 opacity: 0.6;
+}
+ .container.codepen:hover span:nth-child(4) {
+	 transform: translate(20px, 0);
+	 opacity: 0.8;
+}
+ .container.codepen:hover span:nth-child(5) {
+	 transform: translate(25px, 0);
+}
+ .container.envelope {
+	 transform: rotate(0deg) skew(0deg);
+	 transition: all 0.6s;
+}
+ .container.envelope span {
+	 background: #4056a1;
+	 border-radius: 50%;
+}
+ .container.envelope:hover {
+	 transform: rotate(-20deg) skew(10deg);
+}
+ .container.envelope:hover span {
+	 color: #efe1ba;
+}
+ .container.envelope:hover span:nth-child(1) {
+	 transform: translate(-20px, 15px) scale(1);
+	 background: #ed3b17;
+	 opacity: 1;
+}
+ .container.envelope:hover span:nth-child(2) {
+	 transform: translate(-5px, 15px) scale(1.2);
+	 background: #c5cbe3;
+	 opacity: 1;
+}
+ .container.envelope:hover span:nth-child(3) {
+	 background: #ed3b17;
+	 transform: translate(10px, 15px) scale(1.4);
+	 opacity: 1;
+}
+ details {
+	 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	 position: absolute;
+	 left: 5rem;
+	 bottom: 3rem;
+}
+ details p {
+	 margin-left: 1rem;
+	 padding: 0.3rem 0.6rem;
+	 background: #edf5e0;
+	 border-radius: 4px;
+	 margin: 0.2rem 0;
+}
+ details p:after {
+	 content: ".";
+}
+ 
